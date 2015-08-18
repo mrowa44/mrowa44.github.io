@@ -56,6 +56,7 @@ body {
   text-align: center;
   border-top: 5px solid #05D6CF;
   border-bottom: 5px solid #0AD8AE;
+  min-width: 350px;
 }
 h1 {
   font-size: 3em;
@@ -64,6 +65,7 @@ h1 {
 h2 {
   font-size: 1.5em;
   color: #05D6CF;
+  line-height: 1.7em;
 }
 .container ul {
   list-style: none;
@@ -99,4 +101,21 @@ a:link, a:hover, a:visited, a:active {
 }
 .container span {
   display: none;
+}
+@media only screen and (max-width: 350px) {
+  .container {
+    min-width: 100%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  .container ul {
+    font-size: 2em;
+  }
+  .container li {
+    padding: .1em;
+  }
 }
